@@ -1,0 +1,111 @@
+/* Base Styles */
+.wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, sans-serif;
+  padding: 0 1rem;
+}
+
+/* Accordion Item */
+.item {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e0;
+}
+
+/* Accordion Header */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: #f8fafc;
+}
+
+.title:hover {
+  background-color: #f1f5f9;
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.title span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #64748b;
+  transition: transform 0.3s ease;
+}
+
+/* When item is selected */
+.item[aria-expanded="true"] .title {
+  background-color: #e2e8f0;
+}
+
+.item[aria-expanded="true"] .title span {
+  transform: rotate(45deg);
+  color: #334155;
+}
+
+/* Accordion Content */
+.item > div:last-child {
+  padding: 1.5rem;
+  color: #475569;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease-out;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Empty State */
+.wrapper > div:last-child {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 0.5rem;
+  }
+
+  .title {
+    padding: 1rem;
+  }
+
+  .title h3 {
+    font-size: 1rem;
+  }
+
+  .item > div:last-child {
+    padding: 1rem;
+  }
+}

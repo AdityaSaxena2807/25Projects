@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider-image {
+  max-height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 1rem;
+}
+
+.right-arrow {
+  right: 1rem;
+}
