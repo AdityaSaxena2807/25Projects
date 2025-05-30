@@ -1,0 +1,39 @@
+/* tabs.css (or add to your existing CSS file) */
+
+/* Container for the entire tab system */
+.wrapper {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Tab headings (labels) */
+.heading {
+  display: flex;
+  /* background: #544949; */
+  border-radius: 4px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Individual tab label */
+.heading > div {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+/* Active tab label (optional) */
+.heading > div:hover {
+  background: #3f3030;
+}
+
+/* Tab content area */
+.content {
+  padding: 15px;
+  min-height: 100px;
+}
