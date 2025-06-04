@@ -1,17 +1,17 @@
 import React from "react";
 import "./App.css";
-import "./components/accordian/styles.css";
-import Accordian from "./components/accordian";
-import RandomColor from "./components/random color";
-import StarRating from "./components/star rating";
-import ImageSlider from "./components/Image Slider";
-import LoadMore from "./components/load more";
-import TreeView from "./components/tree view";
-import menus from "./components/tree view/data.js";
-import QRcode from "./components/QRcode";
-import ThemeChange from "./components/ThemeSwitch/index.jsx";
-import ScrollIndicator from "./components/scroll-indicator/index.jsx";
-import TabTest from "./components/custom-tabs/tab-test.jsx";
+import "./components/1accordian/styles.css";
+import Accordian from "./components/1accordian/index.jsx";
+import RandomColor from "./components/2random color/index.jsx";
+import StarRating from "./components/3star rating/index.jsx";
+import ImageSlider from "./components/4Image Slider/index.jsx";
+import LoadMore from "./components/5load more/index.jsx";
+import TreeView from "./components/6tree view/index.js";
+import menus from "./components/6tree view/data.js";
+import QRcode from "./components/7QRcode/index.jsx";
+import ThemeChange from "./components/8ThemeSwitch/index.js";
+import ScrollIndicator from "./components/9scroll-indicator/index.jsx";
+import TabTest from "./components/10custom-tabs/tab-test.js";
 function App() {
   return (
     <div className="App">
@@ -47,7 +47,8 @@ function App() {
       {/* {<ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> } */}
 
       {/*Custom Tabs*/}
-      <TabTest />      
+      {/* <TabTest />       */}
+
     </div>
   );
 }
