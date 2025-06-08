@@ -18,7 +18,7 @@ function QRcodeGenerator(/*if type='text' name are to be given by
         <input
           onChange={(e) => setInput(e.target.value)}
           type="text"
-          name="Qr code"
+          name="Qr code"     
           value={input}
           placeholder="Input text here"
         />

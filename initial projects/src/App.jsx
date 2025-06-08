@@ -6,12 +6,13 @@ import RandomColor from "./components/2random color/index.jsx";
 import StarRating from "./components/3star rating/index.jsx";
 import ImageSlider from "./components/4Image Slider/index.jsx";
 import LoadMore from "./components/5load more/index.jsx";
-import TreeView from "./components/6tree view/index.js";
+import TreeView from "./components/6tree view/index.jsx";
 import menus from "./components/6tree view/data.js";
 import QRcode from "./components/7QRcode/index.jsx";
-import ThemeChange from "./components/8ThemeSwitch/index.js";
+import ThemeChange from "./components/8ThemeSwitch/index.jsx";
 import ScrollIndicator from "./components/9scroll-indicator/index.jsx";
-import TabTest from "./components/10custom-tabs/tab-test.js";
+import TabTest from "./components/10custom-tabs/tab-test.jsx";
+import Modaltest from "./components/11custom-modal-popup/modal-test.jsx";
 function App() {
   return (
     <div className="App">
@@ -48,6 +49,9 @@ function App() {
 
       {/*Custom Tabs*/}
       {/* <TabTest />       */}
+
+      {/*Custom Modal Popup*/}
+      {/* <Modaltest /> */}
 
     </div>
   );
