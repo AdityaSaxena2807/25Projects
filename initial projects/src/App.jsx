@@ -33,7 +33,7 @@ function App() {
       /> */}
 
       {/*Load More*/}
-      {/* <LoadMore/> */}
+      <LoadMore/>
 
       {/*Tree View*/}
       {/* <TreeView menus={menus} /> */}
